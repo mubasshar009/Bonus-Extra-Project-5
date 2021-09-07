@@ -6,4 +6,4 @@ const PreCautions = () => {
     )
 }
 
-export default PreCautions
+export default PreCautions;
