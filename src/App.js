@@ -1,11 +1,19 @@
-
-import './App.css';
+import { useState } from 'react';
+import Loading from './Components/Loading';
+import Routers from './Components/Router';
 
 function App() {
-  return (
-    <div >
 
-      <input class="text-green-900 focus:text-red-600 ..." placeholder="Enter Your Name"></input>
+  const [Anim, setAnim] = useState(false);
+  setTimeout(() => {
+    setAnim(false);
+  }, 5000)
+  return (
+    <div className="">
+      {Anim ? <Loading /> :
+        <Routers />
+      }
+
     </div>
   );
 }
