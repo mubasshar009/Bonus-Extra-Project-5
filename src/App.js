@@ -9,7 +9,7 @@ function App() {
     setAnim(false);
   }, 5000)
   return (
-    <div className="">
+    <div className=" font-body">
       {Anim ? <Loading /> :
         <Routers />
       }

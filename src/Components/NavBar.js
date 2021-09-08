@@ -15,7 +15,7 @@ const NavBar = () => {
     }
 
     return (
-        <nav className=" bg-blue-200 rounded">
+        <nav className=" bg-blue-100 rounded">
             <div className="px-8 mx-auto">
                 <div className="flex justify-between py-2">
                     {/* Logo */}
