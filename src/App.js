@@ -4,7 +4,7 @@ import Routers from './Components/Router';
 
 function App() {
 
-  const [Anim, setAnim] = useState(false);
+  const [Anim, setAnim] = useState(true);
   setTimeout(() => {
     setAnim(false);
   }, 5000)

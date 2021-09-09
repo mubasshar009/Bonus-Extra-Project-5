@@ -15,7 +15,7 @@ const NavBar = () => {
     }
 
     return (
-        <nav className=" bg-blue-100 rounded">
+        <nav className=" bg-blue-50 rounded">
             <div className="px-8 mx-auto">
                 <div className="flex justify-between py-2">
                     {/* Logo */}
@@ -59,7 +59,7 @@ const NavBar = () => {
                     </div>
                     <div className="hidden md:flex items-center space-x-3">
                         <a href="#" className="py-2 px-3   hover:bg-blue-500 hover:text-white  rounded-full transition duration-300 shadow-md ">Login</a>
-                        <a href="#" className="py-2 hover:bg-blue-500  hover:text-white p-2 rounded-full transition duration-300 shadow-md px-3 bg-blue-200 ">
+                        <a href="/signup" className="py-2 hover:bg-blue-500  hover:text-white p-2 rounded-full transition duration-300 shadow-md px-3 bg-blue-200 ">
                             <NavLink to="/signup">Sign Up</NavLink>
                         </a>
                     </div>

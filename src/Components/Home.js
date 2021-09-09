@@ -39,14 +39,14 @@ const Home = () => {
     }, [])
     return (
         <div className=" bg-gray-50 w-full font-body  h-screen text-center">
-            <div className="flex  flex-row  w-full h-5/6 items-center justify-around">
+            <div className="md:flex sm:flex-row  w-full h-5/6 items-center justify-around">
                 {/*Left  */}
-                <div className="flex border mt-5 p-8 bg-gray-50 rounded-3xl ml-8 shadow-lg h-96 w-1/3 flex-col">
+                <div className=" md:flex mt-5 p-8 bg-gray-50 rounded-3xl ml-8 shadow-lg h-auto w-1/3 flex-col">
                     <h1 className="text-4xl text-blue-700 font-bold">Current Outbreak The Coronavirus (COVID-19)</h1>
                     <p className=" mt-8 text-center font-extralight text-gray-600  font-serif">Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness.</p>
                 </div>
                 {/* Right */}
-                <div className="flex  flex-col max-h-3xl max-w-3xl " ref={container}>
+                <div className="flex sm:flex-row h-auto w-auto sm:max-h-md sm:max-w-md " ref={container}>
 
                 </div>
             </div>
@@ -84,11 +84,11 @@ const Home = () => {
             </div>
             <div className="flex h-screen w-full justify-around items-center bg-gray-50 ">
 
-                <div className="flex flex-col max-h-xl max-w-xl " ref={container2}>
+                <div className="flex flex-col h-auto w-auto sm:max-h-md sm:max-w-md " ref={container2}>
 
                 </div>
                 {/*Left  */}
-                <div className="flex border justify-center items-center mt-10 p-8 bg-gray-50 rounded-3xl ml-8 shadow-lg h-96 w-1/3 flex-col">
+                <div className="flex border justify-center items-center mt-10 p-8 bg-gray-50 rounded-3xl ml-8 shadow-lg h-auto lg:h-96 w-1/3 flex-col">
                     <h1 className="text-4xl text-blue-700 font-bold">1- Wash Your Hand</h1>
                     <p className=" mt-8 text-center font-extralight text-gray-600  font-serif">Wash your hands regularly with soap and water or clean them with alcohol-based hand rub.</p>
                 </div>
@@ -101,23 +101,23 @@ const Home = () => {
 
 
                 {/*Left  */}
-                <div className="flex border justify-center items-center mt-10 p-8 bg-gray-50 rounded-3xl ml-8 shadow-lg h-96 w-1/3 flex-col">
+                <div className="flex border justify-center items-center mt-10 p-8 bg-gray-50 rounded-3xl ml-8 shadow-lg h-auto lg:h-96 w-1/3 flex-col">
                     <h1 className="text-4xl text-blue-700 font-bold">2- Always Wear Your Mask</h1>
                     <p className=" mt-8 text-center font-extralight text-gray-600  font-serif">Wear a properly fitted mask when physical distancing is not possible or when in poorly ventilated settings.</p>
                 </div>
                 {/* Right */}
-                <div className="flex flex-col max-h-xl max-w-xl " ref={container3}>
+                <div className="flex flex-col h-auto w-auto sm:max-h-md sm:max-w-md " ref={container3}>
 
                 </div>
             </div>
             {/* Fourth Container */}
-            <div className="flex h-screen w-full justify-around items-center bg-gray-50 ">
+            <div className="sm:flex md:inline-flex h-screen w-full justify-around items-center bg-gray-50 ">
 
-                <div className="flex flex-col max-h-xl max-w-xl " ref={container4}>
+                <div className="flex flex-col h-auto w-auto sm:max-h-md sm:max-w-md " ref={container4}>
 
                 </div>
                 {/*Left  */}
-                <div className="flex border justify-center items-center mt-10 p-8 bg-gray-50 rounded-3xl ml-8 shadow-lg h-96 w-1/3 flex-col">
+                <div className="flex border justify-center items-center mt-10 p-8 bg-gray-50 rounded-3xl ml-8 shadow-lg h-auto lg:h-96 w-1/3 flex-col">
                     <h1 className="text-4xl text-blue-700 font-bold">3- Use Sanitizer</h1>
                     <p className=" mt-8 text-center font-extralight text-gray-600  font-serif">Wash Your Hands With Sanitizer.</p>
                 </div>
@@ -125,11 +125,11 @@ const Home = () => {
 
             </div>
             {/* Footer */}
-            <div className="flex justify-between">
-                <div className="flex">
+            <div className="md:flex justify-around bg-blue-300 text-gray-800 h-auto">
+                <div className="block mt-8  p-5">
                     {/* Left */}
-                    <h1 className="block">Regions</h1>
-                    <ul>
+                    <h1 className="block text-2xl font-semibold cursor-pointer">Regions</h1>
+                    <ul className=" cursor-pointer mt-4 block space-y-2">
                         <li>Africa</li>
                         <li>America</li>
                         <li>Mediterranean</li>
@@ -139,12 +139,26 @@ const Home = () => {
                 </div>
 
                 {/* Middle */}
-                <div className="flex">
-                    <h1>Policies</h1>
+                <div className="block mt-8  p-5">
+                    <h1 className="block text-2xl font-semibold cursor-pointer">Policies</h1>
+                    <ul className=" cursor-pointer mt-4 block space-y-2">
+                        <li>Cyber Security</li>
+                        <li>Ethics</li>
+                        <li>Permisission and Licensing</li>
+                        <li>Terms Of Use</li>
+                    </ul>
                 </div>
                 {/* Right */}
-                <div className="flex">
-                    Right
+                <div className="block mt-8  p-5">
+                    <h1 className="block text-2xl font-semibold cursor-pointer">About Us</h1>
+                    <ul className=" cursor-pointer mt-4 block space-y-2">
+                        <li>Careers</li>
+                        <li>Library</li>
+                        <li>Procurement</li>
+                        <li>Publications</li>
+                        <li>FAQs</li>
+                        <li>Contact Us</li>
+                    </ul>
                 </div>
             </div>
         </div>
